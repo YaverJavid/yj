@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&display=swap');
+
+* {
+    line-height: 1.2;
+    
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+}
+
+body {
+    font-size: 15pt;
+    margin: 0;
+    font-family: 'Noto Sans Symbols', sans-serif;
+}
+
+#top {
+    width: 100%;
+    height: 100vw;
+    background-image: url("images/top-background.png");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Source Sans 3', sans-serif!important;
+    line-height: 0.8;
+    background-repeat: no-repeat;
+
+}
+
+
+.project {
+    webkit-box-shadow: 0 0 10px #00000030;
+    box-shadow: 0 0 10px #00000030;
+    border-radius: 10vw;
+    padding: 5vw;
+    margin-bottom: 5vw;
+    position: relative;
+}
+
+
+.project-logo {
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+
+}
+
+#projects {
+    padding: 5vw;
+    padding-bottom: 0;
+}
+
+#pixmacr-project:before,
+#duotone-project:before,
+#email-tab:before{
+    background-image: url("images/project/pixmacr-background.png");
+    content: "";
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10vw;
+    background-size: 100%;
+
+}
+
+
+.project-description {
+    max-width: 360px;
+    margin: 0;
+    margin-top: 2vw
+}
+
+
+.link {
+    display: flex;
+
+}
+
+#duotone-project:before {
+    background-image: url("images/project/duotone-background.png")
+}
+
+#email-tab:before{
+    background-image: url("images/tab-backgrounds/email.png");
+        background-size: 140%
+
+}
+
+h1{
+    text-align: center
+}
+
+.gallery, .tab{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5vh;
+    webkit-box-shadow: 0 0 10px #00000030;
+    box-shadow: 0 0 10px #00000030;
+}
+
+#fist:active{
+    /* content: url("/images/fist-zoom.png"); */
+}
+
+#fist{
+ transition: 100ms ease-out
+}
+
+#email-tab{
+    width: 85%;
+    padding: 2.5vw;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10vw!important;
+    margin-bottom: 5vw
+}
+
+#email-tab > a{
+    color:black
+}
+
+#social-tab{
+    display: flex;
+    justify-content: space-evenly
+}
+
